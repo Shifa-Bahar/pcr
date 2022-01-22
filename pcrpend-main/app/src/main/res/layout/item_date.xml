@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="String" />
+
+    <variable
+      name="position"
+      type="int" />
+    <variable
+      name="isEdit"
+      type="Boolean" />
+    <variable
+      name="click"
+      type="com.lifepharmacy.application.ui.prescription.adapters.ClickItemImage" />
+
+  </data>
+<LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tv_month"
+    style="@style/text_22_8585_semi_bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dimen_5dp"
+    android:padding="@dimen/dimen_5dp"
+    android:text="01/02"
+    android:textAlignment="center"
+    android:textSize="@dimen/dimen_10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="DuplicateIds,MissingConstraints" />
+
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="66dp"
+    android:layout_height="34dp"
+    android:layout_margin="@dimen/dimen_5dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/tv_sdate"
+      style="@style/text_12_accent_dark_semi_bole"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/dimen_5dp"
+      android:layout_gravity="center"
+      android:background="@drawable/accent_50_alpha_rectangle_white"
+      android:text="MON"
+      android:elevation="@dimen/dimen_5dp"
+      android:textAlignment="center"
+      android:textSize="@dimen/dimen_10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+    <!--    <com.google.android.material.imageview.ShapeableImageView-->
+    <!--      android:id="@+id/iv_loaded"-->
+    <!--      loadImageFromURl="@{item}"-->
+    <!--      android:layout_width="0dp"-->
+    <!--      android:layout_height="@dimen/dimen_70dp"-->
+    <!--      android:onClick="@{()->click.onClickImage(item)}"-->
+    <!--      android:scaleType="centerCrop"-->
+    <!--      app:layout_constraintDimensionRatio="w,1:1"-->
+    <!--      app:layout_constraintStart_toStartOf="parent"-->
+    <!--      app:layout_constraintTop_toTopOf="parent"-->
+    <!--      app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize15Percent"-->
+    <!--      tools:srcCompat="@tools:sample/avatars" />-->
+
+
+</layout>
